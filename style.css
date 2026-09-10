@@ -1,0 +1,66 @@
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+:root {
+    --width-height-variable: 600px;
+    --border: rgb(199, 199, 199);
+    --grid: 16;
+}
+
+body {
+    background-color: rgb(2, 116, 116);
+}
+
+h1 {
+    color: var(--border);
+}
+
+body > div{
+    width: 350px;
+    margin: 10px auto ;
+
+    
+}
+
+input {
+    width: 50px;
+}
+
+button, input, select {
+    padding: 5px 10px;
+    margin-bottom: 70px;
+    border: 3px var(--border) solid;
+    border-radius: 10px;
+    color: rgb(2, 116, 116);
+    
+    font-size: 20px;
+    
+}
+
+main {
+    background-color: rgb(218, 216, 216);
+    /* display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr); */
+    width: var(--width-height-variable);
+    height: var(--width-height-variable);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: 3px solid var(--border);
+    
+}
+
+main > div {
+    box-sizing: border-box;
+    border: 0.1px solid var(--border);
+    width: calc(var(--width-height-variable) / 16);
+    height: calc(var(--width-height-variable) / 16);
+    
+}
+
+h1 {
+    text-align: center;
+}
