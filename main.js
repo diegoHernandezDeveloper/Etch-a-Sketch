@@ -3,7 +3,9 @@ let btn = document.querySelector('button')
 
 generateDivs(16)
 function generateDivs(num) {
-    console.log(num)
+
+    if(num == '') num = 16
+    num = +num
     if(num == 0) return alert('please enter a number')
     if(num >= 100) return alert('please enter a number equal or below 100')
     const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
@@ -24,7 +26,7 @@ btn.addEventListener('click', getInput)
 
 
 function getInput() {
-    let gridNumber = +document.querySelector('input').value
+    let gridNumber = document.querySelector('input').value
     generateDivs(gridNumber)
 
 }
